@@ -1,4 +1,16 @@
 (() => {
+    const bodyScrollLock = {
+        disableBodyScroll: function (targetElement) {
+            if (targetElement) {
+                targetElement.style.overflow = 'hidden';
+            }
+        },
+        enableBodyScroll: function (targetElement) {
+            if (targetElement) {
+                targetElement.style = '';
+            }
+        }
+    }
     const mobileMenu = document.querySelector('.js-menu-container');
     const openMenuBtn = document.querySelector('.js-open-menu');
     const closeMenuBtn = document.querySelector('.js-close-menu');

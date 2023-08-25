@@ -889,19 +889,32 @@ img {
 .menu-address-item:first-child .menu-address-link {
     color: var(--primary-brand-color);
     font-family: var(--font-family);
-    font-size: 36px;
+    font-size: 24px;
     font-weight: 700;
     line-height: 1.12;
     letter-spacing: 0.72px;
-    text-transform: capitalize;
-    white-space: nowrap;
 }
 
 .menu-container .social-footer {
-    gap: 56px;
+    gap: 8px;
 }
 
 @media (min-width: 428px) {
+    .menu-address-item:first-child .menu-address-link {
+        color: var(--primary-brand-color);
+        font-family: var(--font-family);
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 1.12;
+        letter-spacing: 0.72px;
+        text-transform: capitalize;
+        white-space: nowrap;
+    }
+
+    .menu-container .social-footer {
+        gap: 56px;
+    }
+
     .principles-item {
         width: 396px;
     }
