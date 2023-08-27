@@ -190,6 +190,13 @@ img {
     background-size: cover;
 }
 
+@media (min-resolution: 2dppx) {
+    .hero-section {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), 
+                    url("../images/people-office@2x.jpg");
+    }
+}
+
 
 .main-title {
     max-width: 320px;
@@ -351,11 +358,13 @@ img {
 }
 
 .filters-list {
-    width: 568px;
+    width: 320px;
+    max-width: 100%;
+    flex-wrap: wrap;
     margin: 0 auto;
     margin-bottom: 72px;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 24px;
 }
 
@@ -899,7 +908,7 @@ img {
     gap: 8px;
 }
 
-@media (min-width: 428px) {
+@media (min-width: 428px) {    
     .menu-address-item:first-child .menu-address-link {
         color: var(--primary-brand-color);
         font-family: var(--font-family);
@@ -935,6 +944,10 @@ img {
 }
 
 @media (min-width: 768px) {
+    .filters-list {
+        width: 600px;
+    }
+
     .nav {
         width: 66%;
     }
@@ -1026,6 +1039,10 @@ img {
 
 
 @media (min-width: 1158px) {
+    .business-section {
+        display: block;
+    }
+
     .nav {
         width: auto;
     }
