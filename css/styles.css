@@ -1072,6 +1072,9 @@ img {
 
 
 @media (min-width: 1158px) {
+    .section.pt-zero {
+        padding-top: 0;
+    }
     .info-footer-container, 
     .social-footer-container {
         margin-bottom: 0;
