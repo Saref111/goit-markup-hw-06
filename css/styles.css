@@ -291,7 +291,8 @@ img {
     font-weight: 500;
 }
 
-.sub-title {
+.sub-title,
+.team-item .sub-title {
     color: var(--primary-black-color);
     font-family: var(--font-family);
     font-size: 20px;
@@ -581,7 +582,7 @@ img {
     left: 50%;
     z-index: 1050;
     transform: translate(-50%, -50%);
-    width: 408px;
+    width: 100%;
     min-height: 584px;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14),
                 0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -908,7 +909,32 @@ img {
     gap: 8px;
 }
 
+.menu-container .social-icons {
+    margin: 0;
+    justify-content: space-between;
+}
+
+.principles-item .sub-title {
+    font-family: var(--font-family);
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.12;
+    letter-spacing: 0.72px;
+    text-transform: capitalize;
+}
+
 @media (min-width: 428px) {    
+    .modal {
+        width: 408px;
+    }
+    .container {
+        max-width: 428px;
+    }
+
+    .menu-container .social-icons {
+        justify-content: center;
+    }
     .menu-address-item:first-child .menu-address-link {
         color: var(--primary-brand-color);
         font-family: var(--font-family);
@@ -944,6 +970,13 @@ img {
 }
 
 @media (min-width: 768px) {
+    .address {
+        font-size: 12px;
+    }
+
+    .container {
+        max-width: 768px;
+    }
     .filters-list {
         width: 600px;
     }
@@ -1039,6 +1072,18 @@ img {
 
 
 @media (min-width: 1158px) {
+    .info-footer-container, 
+    .social-footer-container {
+        margin-bottom: 0;
+    }
+
+    .address {
+        font-size: 16px;
+    }
+
+    .container {
+        max-width: 1158px;
+    }
     .business-section {
         display: block;
     }
